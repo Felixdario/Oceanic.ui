@@ -1,0 +1,89 @@
+{
+  "sections": [
+    {
+      "title": "Primeiros Passos",
+      "items": [
+        {
+          "href": "/dashboard/instalacao",
+          "label": "Instalação"
+        },
+        {
+          "href": "/dashboard/estrutura",
+          "label": "Estrutura do Projeto"
+        }
+      ]
+    },
+    {
+      "title": "Componentes",
+      "items": [
+        {
+          "href": "/componentes/accordion",
+          "label": "Accordion"
+        },
+        {
+          "href": "/componentes/alert",
+          "label": "Alert"
+        },
+        {
+          "href": "/componentes/alert-dialog",
+          "label": "Alert Dialog"
+        },
+        {
+          "href": "/componentes/avatar",
+          "label": "Avatar"
+        },
+        {
+          "href": "/componentes/button",
+          "label": "Button"
+        },
+        {
+          "href": "/componentes/card",
+          "label": "Card"
+        }
+      ]
+    },
+    {
+      "title": "API",
+      "items": [
+        {
+          "href": "/api/componentes",
+          "label": "Componentes"
+        },
+        {
+          "href": "/api/convencoes",
+          "label": "Convenções de Arquivos"
+        },
+        {
+          "href": "/api/funcoes",
+          "label": "Funções"
+        }
+      ]
+    },
+    {
+      "title": "Arquitetura",
+      "items": [
+        {
+          "href": "/architecture/acessibilidade",
+          "label": "Acessibilidade"
+        },
+        {
+          "href": "/architecture/atualizacao",
+          "label": "Atualização Rápida"
+        },
+        {
+          "href": "/architecture/compilador",
+          "label": "Compilador Next.js"
+        }
+      ]
+    },
+    {
+      "title": "Comunidade",
+      "items": [
+        {
+          "href": "/community/contribuicao",
+          "label": "Guia de Contribuição"
+        }
+      ]
+    }
+  ]
+}
