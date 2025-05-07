@@ -6,7 +6,7 @@ import { Breadcrumbs } from "./navigation/header/Breadcrumbs";
 import { SearchBar } from "./navigation/header/SearchBar";
 import { UserDropdown } from "./navigation/header/UserDropdown";
 import { Divider } from "./navigation/header/Divider";
-
+import Image from "@/public/globe.svg";
 const Header = () => {
   const pathname = usePathname();
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -44,7 +44,7 @@ const Header = () => {
   const mockUser = {
     name: "John Doe",
     email: "john.doe@example.com",
-    avatarUrl: "https://github.com/shadcn.png"
+    avatarUrl: Image.src
   };
 
   return (

@@ -1,9 +1,19 @@
 'use client'
 
-import { Button } from "@mui/material"
+import { Button, ThemeProvider } from "@mui/material"
+import { theme } from "@/app/theme"
+import { LoadingButton } from "@/app/componentes/button/components/LoadingButton"
+import { useState } from "react"
 
 export function ButtonPreview() {
+  const [loading, setLoading] = useState(false)
+
+  const handleLoadingClick = () => {
+    setLoading(true)
+    setTimeout(() => setLoading(false), 2000)
+  }
   return (
+    <ThemeProvider theme={theme}>
     <div className="space-y-6">
       <div className="rounded-lg border p-6">
         <h2 className="text-2xl font-semibold mb-2">Propriedades</h2>
@@ -92,8 +102,20 @@ export function ButtonPreview() {
           <div className="space-y-4">
             <h3 className="font-medium">Estado de Carregamento</h3>
             <div className="flex gap-4">
-              <Button variant="contained" loading>Loading</Button>
-              <Button variant="outlined" loading>Loading</Button>
+            <LoadingButton 
+                  variant="contained" 
+                  loading={loading}
+                  onClick={handleLoadingClick}
+                >
+                  Contained
+                </LoadingButton>
+                <LoadingButton 
+                  variant="outlined" 
+                  loading={loading}
+                  onClick={handleLoadingClick}
+                >
+                  Outlined
+                </LoadingButton>
             </div>
           </div>
         </div>
@@ -123,5 +145,6 @@ export function ButtonPreview() {
         </div>
       </div>
     </div>
+    </ThemeProvider>
   )
 } 

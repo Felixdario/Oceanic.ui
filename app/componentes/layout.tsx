@@ -2,7 +2,7 @@
 
 import Sidebar from "@/app/components/Sidebar";
 import Header from "@/app/components/Header";
-import Image from "../images/background.png";
+import Image from "@/public/background.png";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div

@@ -22,7 +22,7 @@ export default function ButtonPage() {
           <button
             onClick={() => setActiveTab("preview")}
             className={`border-b-2 py-4 px-1 text-sm font-medium ${activeTab === "preview"
-              ? "border-indigo-500 text-indigo-600"
+              ? "border-blue-500 text-blue-600"
               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
               }`}
           >
@@ -31,7 +31,7 @@ export default function ButtonPage() {
           <button
             onClick={() => setActiveTab("code")}
             className={`border-b-2 py-4 px-1 text-sm font-medium ${activeTab === "code"
-              ? "border-indigo-500 text-indigo-600"
+              ? "border-blue-500 text-blue-600"
               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
               }`}
           >

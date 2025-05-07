@@ -28,7 +28,7 @@ export default function Home() {
                 <Link href="/componentes" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-[#24304d] text-white hover:bg-[#24304d]/90 h-11 px-8 gap-2">
                   Explorar Componentes <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href="/guia" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-input hover:bg-accent hover:text-accent-foreground h-11 px-8 gap-2">
+                <Link href="/" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-input hover:bg-accent hover:text-accent-foreground h-11 px-8 gap-2">
                   <Code className="h-4 w-4" /> Documentação
                 </Link>
               </div>
@@ -203,8 +203,8 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link href="/componentes" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-primary text-blue-500-foreground hover:bg-primary/90 h-11 px-8">
-              Ver todos os componentes
+            <Link href="/componentes" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-[#24304d] text-white hover:bg-[#24304d]/90 h-11 px-8 gap-2">
+              Ver todos os componentes <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function Home() {
                 Acelere seu desenvolvimento com componentes prontos para uso e personalizáveis
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Link href="/guia" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-white text-black hover:bg-white/90 h-11 px-8 gap-2">
+                <Link href="/" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-white text-black hover:bg-white/90 h-11 px-8 gap-2">
                   <Code className="h-4 w-4" /> Documentação
                 </Link>
                 <Link href="/componentes" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-white/10 text-white border-white/20 hover:bg-white/20 h-11 px-8 gap-2 border">
