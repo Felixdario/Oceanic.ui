@@ -1,0 +1,140 @@
+{
+  "name": "Avatar",
+  "description": "O componente Avatar do Material UI é usado para representar usuários ou entidades em uma interface.",
+  "component": {
+    "type": "Avatar",
+    "import": "import { Avatar } from '@mui/material'",
+    "defaultProps": {
+      "variant": "circular"
+    }
+  },
+  "codeExample": {
+    "import": "import { Avatar } from '@mui/material'",
+    "component": "Avatar",
+    "props": ["variant", "src", "alt"],
+    "defaultText": "JD"
+  },
+  "labels": {
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "O Avatar possui várias propriedades que podem ser personalizadas:",
+    "variants": "Variantes",
+    "variantsDescription": "O Avatar pode ser exibido em diferentes formas:",
+    "sizes": "Tamanhos",
+    "sizesDescription": "O Avatar pode ser exibido em diferentes tamanhos usando a propriedade sx:",
+    "states": "Estados",
+    "statesDescription": "O Avatar pode estar em diferentes estados:",
+    "bestPractices": "Melhores Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação",
+    "preview": "Preview",
+    "variant": "Variante",
+    "size": "Tamanho",
+    "text": "Texto",
+    "loading": "Carregando"
+  },
+  "properties": [
+    {
+      "name": "variant",
+      "type": "string",
+      "description": "Define a forma do avatar",
+      "options": ["circular", "rounded", "square"]
+    },
+    {
+      "name": "src",
+      "type": "string",
+      "description": "URL da imagem do avatar"
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "description": "Texto alternativo para acessibilidade"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Circular",
+      "description": "Avatar com bordas arredondadas em formato circular",
+      "example": {
+        "variant": "circular",
+        "text": "JD"
+      }
+    },
+    {
+      "name": "Rounded",
+      "description": "Avatar com bordas levemente arredondadas",
+      "example": {
+        "variant": "rounded",
+        "text": "AB"
+      }
+    },
+    {
+      "name": "Square",
+      "description": "Avatar com bordas retas",
+      "example": {
+        "variant": "square",
+        "text": "CD"
+      }
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "value": "small",
+      "example": {
+        "sx": { "width": 24, "height": 24 },
+        "text": "S"
+      }
+    },
+    {
+      "name": "Medium",
+      "value": "medium",
+      "example": {
+        "sx": { "width": 40, "height": 40 },
+        "text": "M"
+      }
+    },
+    {
+      "name": "Large",
+      "value": "large",
+      "example": {
+        "sx": { "width": 56, "height": 56 },
+        "text": "L"
+      }
+    }
+  ],
+  "states": {
+    "loading": {
+      "description": "Avatar em estado de carregamento",
+      "examples": [
+        {
+          "variant": "circular",
+          "loading": true,
+          "text": "JD"
+        }
+      ]
+    }
+  },
+  "bestPractices": [
+    {
+      "title": "Uso de Imagens",
+      "description": "Use imagens de alta qualidade e mantenha a proporção quadrada",
+      "examples": [
+        {
+          "variant": "circular",
+          "text": "JD"
+        }
+      ]
+    },
+    {
+      "title": "Fallback",
+      "description": "Sempre forneça um texto alternativo para quando a imagem não carregar",
+      "examples": [
+        {
+          "variant": "circular",
+          "text": "AB"
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,156 @@
+{
+  "name": "Accordion",
+  "description": "Um componente expansível que permite organizar conteúdo em seções recolhíveis.",
+  "component": {
+    "type": "Accordion",
+    "import": "import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material'",
+    "defaultProps": {
+      "expanded": false,
+      "disabled": false,
+      "sx": { "width": "100%", "height": "100%" }
+    }
+
+  },
+  "labels": {
+    "preview": "Preview",
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "Lista de propriedades disponíveis para o componente",
+    "variants": "Variantes",
+    "variantsDescription": "Diferentes estilos de accordion disponíveis",
+    "states": "Estados",
+    "statesDescription": "Estados possíveis do accordion",
+    "bestPractices": "Boas Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação"
+  },
+  "codeExample": {
+    "import": "import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material'",
+    "component": "Accordion",
+    "props": ["expanded", "disabled", "sx", "square"],
+    "defaultText": "Seção do Accordion"
+  },
+  "properties": [
+    {
+      "name": "expanded",
+      "type": "boolean",
+      "description": "Controla se o accordion está expandido"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Desabilita o accordion"
+    },
+    {
+      "name": "sx",
+      "type": "object",
+      "description": "Propriedades CSS customizadas"
+    },
+    {
+      "name": "square",
+      "type": "boolean",
+      "description": "Remove o arredondamento das bordas"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Default",
+      "description": "Accordion padrão com bordas arredondadas",
+      "example": {
+        "expanded": false,
+        "disabled": false,
+        "summary": "Seção do Accordion",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    },
+    {
+      "name": "Square",
+      "description": "Accordion com bordas retas",
+      "example": {
+        "expanded": false,
+        "square": true,
+        "summary": "Accordion 2",
+        "details": "Conteúdo do accordion 2"
+      }
+    },
+    {
+      "name": "Expanded",
+      "description": "Accordion inicialmente expandido",
+      "example": {
+        "expanded": true,
+        "disabled": false,
+        "summary": "Seção Expandida",
+        "details": "Este é um exemplo de accordion que inicia expandido."
+      }
+    }
+  ],
+  "states": [
+    {
+      "name": "Default",
+      "description": "Estado padrão do accordion",
+      "examples": [
+        {
+          "expanded": false,
+          "summary": "Accordion Fechado",
+          "details": "Este accordion está fechado por padrão."
+        }
+      ]
+    },
+    {
+      "name": "Expanded",
+      "description": "Accordion expandido",
+      "examples": [
+        {
+          "expanded": true,
+          "summary": "Accordion Aberto",
+          "details": "Este accordion está aberto por padrão."
+        }
+      ]
+    },
+    {
+      "name": "Disabled",
+      "description": "Accordion desabilitado",
+      "examples": [
+        {
+          "disabled": true,
+          "summary": "Accordion Desabilitado",
+          "details": "Este accordion está desabilitado."
+        }
+      ]
+    }
+  ],
+  "bestPractices": [
+    {
+      "title": "Organização de Conteúdo",
+      "description": "Use accordions para organizar informações relacionadas em seções",
+      "examples": [
+        {
+          "expanded": false,
+          "summary": "Informações Básicas",
+          "details": "Conteúdo com informações básicas do accordion."
+        },
+        {
+          "expanded": false,
+          "summary": "Informações Avançadas",
+          "details": "Conteúdo com informações avançadas do accordion."
+        }
+      ]
+    },
+    {
+      "title": "Controle de Expansão",
+      "description": "Permita que apenas um accordion esteja aberto por vez para melhor organização",
+      "examples": [
+        {
+          "expanded": true,
+          "summary": "Seção Principal",
+          "details": "Conteúdo da seção principal do accordion."
+        },
+        {
+          "expanded": false,
+          "summary": "Seção Secundária",
+          "details": "Conteúdo da seção secundária do accordion."
+        }
+      ]
+    }
+  ]
+} 

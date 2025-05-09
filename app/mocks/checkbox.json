@@ -1,0 +1,176 @@
+{
+  "name": "Checkbox",
+  "description": "O componente Checkbox do Material UI é usado para permitir que os usuários selecionem uma ou mais opções de um conjunto de opções.",
+  "component": {
+    "type": "Checkbox",
+    "import": "import { Checkbox } from '@mui/material'\nimport FavoriteBorder from '@mui/icons-material/FavoriteBorder'\nimport Favorite from '@mui/icons-material/Favorite'",
+    "defaultProps": {
+      "defaultChecked": true,
+      "color": "primary",
+      "size": "medium",
+      "label": "Checkbox"
+    }
+  },
+  "codeExample": {
+    "import": "import { Checkbox, FormControlLabel } from '@mui/material'",
+    "component": "Checkbox",
+    "props": ["color", "size", "disabled", "onChange", "icon", "checkedIcon", "label"]
+  },
+  "labels": {
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "O Checkbox possui várias propriedades que podem ser personalizadas:",
+    "colors": "Cores",
+    "colorsDescription": "O Checkbox pode ser exibido em diferentes cores:",
+    "sizes": "Tamanhos",
+    "sizesDescription": "O Checkbox pode ser exibido em diferentes tamanhos:",
+    "states": "Estados",
+    "statesDescription": "O Checkbox pode estar em diferentes estados:",
+    "bestPractices": "Melhores Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação",
+    "preview": "Preview",
+    "color": "Cor",
+    "disabled": "Desabilitado",
+    "checked": "Selecionado",
+    "indeterminate": "Indeterminado"
+  },
+  "properties": [
+    {
+      "name": "color",
+      "type": "string",
+      "description": "Define a cor do checkbox",
+      "options": ["default", "primary", "secondary", "error", "info", "success", "warning"]
+    },
+    {
+      "name": "size",
+      "type": "string",
+      "description": "Define o tamanho do checkbox",
+      "options": ["small", "medium"]
+    },
+    {
+      "name": "onChange",
+      "type": "function",
+      "description": "Função chamada quando o estado do checkbox muda"
+    },
+    {
+      "name": "icon",
+      "type": "string",
+      "description": "Ícone exibido quando o checkbox não está selecionado",
+      "options": ["FavoriteBorder", "StarBorder", "CheckBoxOutlineBlank"]
+    },
+    {
+      "name": "checkedIcon",
+      "type": "string",
+      "description": "Ícone exibido quando o checkbox está selecionado",
+      "options": ["Favorite", "Star", "CheckBox"]
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Texto do label do checkbox"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Desabilita o checkbox"
+    }
+  ],
+  "colors": [
+    {
+      "name": "Default",
+      "value": "default"
+    },
+    {
+      "name": "Primary",
+      "value": "primary"
+    },
+    {
+      "name": "Secondary",
+      "value": "secondary"
+    },
+    {
+      "name": "Error",
+      "value": "error"
+    },
+    {
+      "name": "Info",
+      "value": "info"
+    },
+    {
+      "name": "Success",
+      "value": "success"
+    },
+    {
+      "name": "Warning",
+      "value": "warning"
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "value": "small",
+      "example": {
+        "size": "small"
+      }
+    },
+    {
+      "name": "Medium",
+      "value": "medium",
+      "example": {
+        "size": "medium"
+      }
+    }
+  ],
+  "states": {
+    "disabled": {
+      "description": "Checkbox desabilitado",
+      "examples": [
+        {
+          "color": "primary",
+          "disabled": true
+        }
+      ]
+    },
+    "checked": {
+      "description": "Checkbox selecionado",
+      "examples": [
+        {
+          "color": "primary",
+          "checked": true
+        }
+      ]
+    },
+    "indeterminate": {
+      "description": "Checkbox em estado indeterminado",
+      "examples": [
+        {
+          "color": "primary",
+          "indeterminate": true
+        }
+      ]
+    }
+  },
+  "bestPractices": [
+    {
+      "title": "Uso de Labels",
+      "description": "Sempre use labels descritivos ao lado do checkbox para melhor acessibilidade",
+      "examples": [
+        {
+          "color": "primary",
+          "label": "Opção 1"
+        }
+      ]
+    },
+    {
+      "title": "Agrupamento",
+      "description": "Use checkboxes em grupos quando houver múltiplas opções relacionadas",
+      "examples": [
+        {
+          "color": "primary",
+          "label": "Grupo de Opções"
+        }
+      ]
+    }
+  ]
+} 

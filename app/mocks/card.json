@@ -1,0 +1,215 @@
+{
+  "name": "Card",
+  "description": "Um componente de cartão que exibe conteúdo e ações relacionadas a um único assunto.",
+  "component": {
+    "type": "Card",
+    "import": "import { Card, CardContent, CardActions, CardMedia } from '@mui/material'",
+    "defaultProps": {
+      "raised": false,
+      "sx": { "width": "345px", "height": "100px" },
+      "children": {
+        "type": "CardContent",
+        "children": "Conteúdo do Card"
+      }
+    }
+  },
+  "labels": {
+    "preview": "Preview",
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "Lista de propriedades disponíveis para o componente",
+    "variants": "Variantes",
+    "variantsDescription": "Diferentes estilos de card disponíveis",
+    "states": "Estados",
+    "statesDescription": "Estados possíveis do card",
+    "bestPractices": "Boas Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação"
+  },
+  "codeExample": {
+    "import": "import { Card, CardContent, CardActions, CardMedia } from '@mui/material'",
+    "component": "Card",
+    "props": ["raised", "variant", "sx"],
+    "defaultText": "<CardContent>Conteúdo do Card</CardContent>"
+  },
+  "properties": [
+    {
+      "name": "raised",
+      "type": "boolean",
+      "description": "Aplica elevação ao card"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "description": "Variante do card",
+      "options": ["elevation", "outlined"]
+    },
+    {
+      "name": "sx",
+      "type": "object",
+      "description": "Propriedades CSS customizadas"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Elevation",
+      "description": "Card com elevação padrão",
+      "example": {
+        "variant": "elevation",
+        "children": {
+          "type": "CardContent",
+          "children": "Card com elevação"
+        }
+      }
+    },
+    {
+      "name": "Outlined",
+      "description": "Card com borda sem elevação",
+      "example": {
+        "variant": "outlined",
+        "children": {
+          "type": "CardContent",
+          "children": "Card com borda"
+        }
+      }
+    },
+    {
+      "name": "Media",
+      "description": "Card com imagem e conteúdo",
+      "example": {
+        "variant": "elevation",
+        "children": [
+          {
+            "type": "CardMedia",
+            "component": "img",
+            "height": "140",
+            "image": "https://mui.com/static/images/cards/contemplative-reptile.jpg",
+            "alt": "green iguana"
+          },
+          {
+            "type": "CardContent",
+            "children": "Card com imagem e conteúdo"
+          }
+        ]
+      }
+    }
+  ],
+  "states": [
+    {
+      "name": "Default",
+      "description": "Estado padrão do card",
+      "examples": [
+        {
+          "variant": "elevation",
+          "children": {
+            "type": "CardContent",
+            "children": "Card em estado padrão"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hover",
+      "description": "Card com efeito hover",
+      "examples": [
+        {
+          "variant": "elevation",
+          "raised": true,
+          "children": {
+            "type": "CardContent",
+            "children": "Card com efeito hover"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Disabled",
+      "description": "Card desabilitado",
+      "examples": [
+        {
+          "variant": "outlined",
+          "disabled": true,
+          "children": {
+            "type": "CardContent",
+            "children": "Card desabilitado"
+          }
+        }
+      ]
+    }
+  ],
+  "bestPractices": [
+    {
+      "title": "Hierarquia de Conteúdo",
+      "description": "Organize o conteúdo do card de forma hierárquica com título, subtítulo e conteúdo",
+      "examples": [
+        {
+          "variant": "elevation",
+          "children": {
+            "type": "CardContent",
+            "children": [
+              {
+                "type": "Typography",
+                "variant": "h5",
+                "component": "div",
+                "children": "Título do Card"
+              },
+              {
+                "type": "Typography",
+                "sx": { "mb": 1.5 },
+                "color": "text.secondary",
+                "children": "Subtítulo do Card"
+              },
+              {
+                "type": "Typography",
+                "variant": "body2",
+                "children": "Conteúdo principal do card organizado hierarquicamente"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Uso de Ações",
+      "description": "Adicione ações claras e relevantes no rodapé do card",
+      "examples": [
+        {
+          "variant": "outlined",
+          "children": [
+            {
+              "type": "CardContent",
+              "children": [
+                {
+                  "type": "Typography",
+                  "variant": "h5",
+                  "component": "div",
+                  "children": "Card com Ações"
+                },
+                {
+                  "type": "Typography",
+                  "variant": "body2",
+                  "children": "Conteúdo do card com ações"
+                }
+              ]
+            },
+            {
+              "type": "CardActions",
+              "children": [
+                {
+                  "type": "Button",
+                  "size": "small",
+                  "children": "Confirmar"
+                },
+                {
+                  "type": "Button",
+                  "size": "small",
+                  "children": "Cancelar"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

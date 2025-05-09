@@ -1,0 +1,253 @@
+{
+  "name": "Badge",
+  "description": "Um componente de badge para exibir notificações, contadores ou status.",
+  "component": {
+    "type": "Badge",
+    "import": "import { Badge } from '@mui/material'\nimport NotificationsIcon from '@mui/icons-material/Notifications'\nimport MailIcon from '@mui/icons-material/Mail'\nimport ShoppingCartIcon from '@mui/icons-material/ShoppingCart'\nimport AccountCircleIcon from '@mui/icons-material/AccountCircle'",
+    "defaultProps": {
+      "variant": "standard",
+      "color": "primary",
+      "badgeContent": "1",
+      "children": "NotificationsIcon"
+    }
+  },
+  "labels": {
+    "preview": "Preview",
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "Lista de propriedades disponíveis para o componente",
+    "variants": "Variantes",
+    "variantsDescription": "Diferentes estilos de badge disponíveis",
+    "colors": "Cores",
+    "colorsDescription": "Paleta de cores disponível",
+    "states": "Estados",
+    "statesDescription": "Estados possíveis do badge",
+    "bestPractices": "Boas Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação",
+    "variant": "Variante",
+    "color": "Cor",
+    "text": "Texto",
+    "disabled": "Desabilitado",
+    "icon": "Ícone"
+  },
+  "preview": {
+    "variants": [
+      {
+        "title": "Standard com Número",
+        "props": {
+          "variant": "standard",
+          "color": "primary",
+          "badgeContent": "4",
+          "children": "NotificationsIcon"
+        }
+      },
+      {
+        "title": "Dot com Ícone",
+        "props": {
+          "variant": "dot",
+          "color": "error",
+          "children": "MailIcon"
+        }
+      },
+      {
+        "title": "Badge com Máximo",
+        "props": {
+          "variant": "standard",
+          "color": "secondary",
+          "badgeContent": "99+",
+          "max": 99,
+          "children": "ShoppingCartIcon"
+        }
+      }
+    ],
+    "colors": [
+      {
+        "title": "Primary",
+        "props": {
+          "color": "primary",
+          "badgeContent": "2",
+          "children": "NotificationsIcon"
+        }
+      },
+      {
+        "title": "Secondary",
+        "props": {
+          "color": "secondary",
+          "badgeContent": "2",
+          "children": "NotificationsIcon"
+        }
+      },
+      {
+        "title": "Error",
+        "props": {
+          "color": "error",
+          "badgeContent": "2",
+          "children": "NotificationsIcon"
+        }
+      }
+    ]
+  },
+  "codeExample": {
+    "import": "import { Badge } from '@mui/material'",
+    "component": "Badge",
+    "props": ["variant", "color", "badgeContent", "overlap", "anchorOrigin"],
+    "defaultText": "<NotificationsIcon />"
+  },
+  "properties": [
+    {
+      "name": "badgeContent",
+      "type": "string",
+      "description": "Define o conteúdo do badge"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "description": "Define a aparência do badge",
+      "options": ["standard", "dot"]
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "description": "Define a cor do badge",
+      "options": ["primary", "secondary", "error", "warning", "info", "success"]
+    },
+    {
+      "name": "overlap",
+      "type": "string",
+      "description": "Define como o badge se sobrepõe ao elemento filho",
+      "options": ["rectangular", "circular"]
+    },
+    {
+      "name": "children",
+      "type": "string",
+      "description": "Define o ícone a ser usado dentro do badge",
+      "options": ["NotificationsIcon", "MailIcon", "ShoppingCartIcon", "AccountCircleIcon"]
+    }
+  ],
+  "variants": [
+    {
+      "name": "Standard",
+      "description": "Badge com número ou texto",
+      "example": {
+        "variant": "standard",
+        "color": "primary",
+        "badgeContent": "4",
+        "overlap": "rectangular",
+        "children": "NotificationsIcon"
+      }
+    },
+    {
+      "name": "Dot",
+      "description": "Badge em formato de ponto",
+      "example": {
+        "variant": "dot",
+        "color": "error",
+        "overlap": "circular",
+        "children": "MailIcon"
+      }
+    }
+  ],
+  "colors": [
+    {
+      "name": "Primary",
+      "value": "primary"
+    },
+    {
+      "name": "Secondary",
+      "value": "secondary"
+    },
+    {
+      "name": "Error",
+      "value": "error"
+    },
+    {
+      "name": "Warning",
+      "value": "warning"
+    },
+    {
+      "name": "Info",
+      "value": "info"
+    },
+    {
+      "name": "Success",
+      "value": "success"
+    }
+  ],
+  "states": [
+    {
+      "name": "Default",
+      "description": "Estado padrão do badge",
+      "examples": [
+        {
+          "variant": "standard",
+          "color": "primary",
+          "badgeContent": "1",
+          "children": "NotificationsIcon"
+        }
+      ]
+    },
+    {
+      "name": "Invisible",
+      "description": "Badge oculto",
+      "examples": [
+        {
+          "variant": "standard",
+          "color": "primary",
+          "badgeContent": "0",
+          "invisible": true,
+          "children": "NotificationsIcon"
+        }
+      ]
+    },
+    {
+      "name": "Max",
+      "description": "Badge com valor máximo",
+      "examples": [
+        {
+          "variant": "standard",
+          "color": "secondary",
+          "badgeContent": "99+",
+          "max": 99,
+          "children": "ShoppingCartIcon"
+        }
+      ]
+    }
+  ],
+  "bestPractices": [
+    {
+      "title": "Posicionamento",
+      "description": "Use o posicionamento apropriado para melhor visibilidade",
+      "examples": [
+        {
+          "variant": "standard",
+          "color": "primary",
+          "badgeContent": "new",
+          "children": "NotificationsIcon",
+          "anchorOrigin": {
+            "vertical": "top",
+            "horizontal": "right"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Uso de Cores",
+      "description": "Use cores para indicar diferentes tipos de notificação",
+      "examples": [
+        {
+          "variant": "dot",
+          "color": "error",
+          "overlap": "circular",
+          "children": "MailIcon"
+        },
+        {
+          "variant": "standard",
+          "color": "success",
+          "badgeContent": "online",
+          "children": "AccountCircleIcon"
+        }
+      ]
+    }
+  ]
+} 

@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --sidebar-width: 16rem;
-    --sidebar-width-icon: 3rem;
+    --sidebar-width-icon: 4rem;
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 

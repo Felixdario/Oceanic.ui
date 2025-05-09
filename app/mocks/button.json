@@ -1,0 +1,227 @@
+{
+  "name": "Button",
+  "description": "Um componente de botão com diferentes variantes e tamanhos.",
+  "component": {
+    "type": "Button",
+    "import": "import { Button } from '@mui/material'",
+    "defaultProps": {
+      "variant": "contained",
+      "color": "primary",
+      "size": "medium"
+    }
+  },
+  "labels": {
+    "preview": "Preview",
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "Lista de propriedades disponíveis para o componente",
+    "variants": "Variantes",
+    "variantsDescription": "Diferentes estilos de botão disponíveis",
+    "colors": "Cores",
+    "colorsDescription": "Paleta de cores disponível",
+    "sizes": "Tamanhos",
+    "sizesDescription": "Opções de tamanho do botão",
+    "states": "Estados",
+    "statesDescription": "Estados possíveis do botão",
+    "bestPractices": "Boas Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação",
+    "variant": "Variante",
+    "color": "Cor",
+    "size": "Tamanho",
+    "text": "Texto",
+    "disabled": "Desabilitado",
+    "loading": "Carregando"
+  },
+  "codeExample": {
+    "import": "import { Button } from '@mui/material'",
+    "component": "Button",
+    "props": ["variant", "color", "size", "disabled", "loading"],
+    "defaultText": "Button"
+  },
+  "properties": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Define o texto do botão"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "description": "Define a aparência do botão",
+      "options": ["contained", "outlined", "text"]
+    },
+    {
+      "name": "size",
+      "type": "string",
+      "description": "Define o tamanho do botão",
+      "options": ["small", "medium", "large"]
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "description": "Define a cor do botão",
+      "options": ["primary", "secondary", "error", "warning", "info", "success"]
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Define se o botão está desabilitado"
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "description": "Define se o botão está carregando"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Contained",
+      "description": "Botões com preenchimento sólido, usados para ações principais.",
+      "example": {
+        "variant": "contained",
+        "color": "primary",
+        "text": "Contained"
+      }
+    },
+    {
+      "name": "Outlined",
+      "description": "Botões com borda e fundo transparente, para ações secundárias.",
+      "example": {
+        "variant": "outlined",
+        "color": "primary",
+        "text": "Outlined"
+      }
+    },
+    {
+      "name": "Text",
+      "description": "Botões sem borda ou preenchimento, para ações terciárias.",
+      "example": {
+        "variant": "text",
+        "color": "primary",
+        "text": "Text"
+      }
+    }
+  ],
+  "colors": [
+    {
+      "name": "Primary",
+      "value": "primary"
+    },
+    {
+      "name": "Secondary",
+      "value": "secondary"
+    },
+    {
+      "name": "Error",
+      "value": "error"
+    },
+    {
+      "name": "Warning",
+      "value": "warning"
+    },
+    {
+      "name": "Info",
+      "value": "info"
+    },
+    {
+      "name": "Success",
+      "value": "success"
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "value": "small"
+    },
+    {
+      "name": "Medium",
+      "value": "medium"
+    },
+    {
+      "name": "Large",
+      "value": "large"
+    }
+  ],
+  "states": {
+    "disabled": {
+      "description": "Estado Desabilitado",
+      "examples": [
+        {
+          "variant": "contained",
+          "disabled": true,
+          "text": "Contained"
+        },
+        {
+          "variant": "outlined",
+          "disabled": true,
+          "text": "Outlined"
+        },
+        {
+          "variant": "text",
+          "disabled": true,
+          "text": "Text"
+        }
+      ]
+    },
+    "loading": {
+      "description": "Estado de Carregamento",
+      "examples": [
+        {
+          "variant": "contained",
+          "loading": true,
+          "text": "Loading"
+        },
+        {
+          "variant": "outlined",
+          "loading": true,
+          "text": "Loading"
+        }
+      ]
+    }
+  },
+  "bestPractices": [
+    {
+      "title": "Hierarquia Visual",
+      "description": "Use diferentes variantes para estabelecer hierarquia",
+      "examples": [
+        {
+          "variant": "contained",
+          "color": "primary",
+          "text": "Salvar"
+        },
+        {
+          "variant": "outlined",
+          "color": "primary",
+          "text": "Cancelar"
+        },
+        {
+          "variant": "text",
+          "color": "primary",
+          "text": "Voltar"
+        }
+      ]
+    },
+    {
+      "title": "Cores Significativas",
+      "description": "Use cores apropriadas para cada ação",
+      "examples": [
+        {
+          "variant": "contained",
+          "color": "error",
+          "text": "Deletar"
+        },
+        {
+          "variant": "contained",
+          "color": "success",
+          "text": "Confirmar"
+        },
+        {
+          "variant": "contained",
+          "color": "warning",
+          "text": "Atenção"
+        }
+      ]
+    }
+  ]
+} 

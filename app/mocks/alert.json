@@ -1,0 +1,211 @@
+{
+  "name": "Alert",
+  "description": "Um componente de alerta para exibir mensagens importantes ao usuário.",
+  "component": {
+    "type": "Alert",
+    "import": "import { Alert } from '@mui/material'",
+    "defaultProps": {
+      "variant": "standard",
+      "color": "primary"
+    }
+  },
+  "labels": {
+    "preview": "Preview",
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "Lista de propriedades disponíveis para o componente",
+    "variants": "Variantes",
+    "variantsDescription": "Diferentes estilos de alerta disponíveis",
+    "colors": "Cores",
+    "colorsDescription": "Paleta de cores disponível",
+    "states": "Estados",
+    "statesDescription": "Estados possíveis do alerta",
+    "bestPractices": "Boas Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação",
+    "variant": "Variante",
+    "color": "Cor",
+    "severity": "Severidade",
+    "text": "Texto",
+    "disabled": "Desabilitado"
+  },
+  "codeExample": {
+    "import": "import { Alert } from '@mui/material'",
+    "component": "Alert",
+    "props": ["variant", "color", "disabled"],
+    "defaultText": "This is an alert message"
+  },
+  "properties": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Define o texto do alerta"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "description": "Define a aparência do alerta",
+      "options": ["standard", "filled", "outlined"]
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "description": "Define a cor do alerta",
+      "options": ["primary", "secondary", "error", "warning", "info", "success"]
+    }
+  ],
+  "variants": [
+    {
+      "name": "Standard",
+      "description": "Alerta com estilo padrão, com ícone e borda colorida.",
+      "example": {
+        "variant": "standard",
+        "color": "primary",
+        "severity": "info",
+        "text": "This is a standard alert"
+      }
+    },
+    {
+      "name": "Filled",
+      "description": "Alerta com fundo colorido e texto branco.",
+      "example": {
+        "variant": "filled",
+        "color": "success",
+        "severity": "success",
+        "text": "This is a filled alert"
+      }
+    },
+    {
+      "name": "Outlined",
+      "description": "Alerta com borda colorida e fundo transparente.",
+      "example": {
+        "variant": "outlined",
+        "color": "warning",
+        "severity": "warning",
+        "text": "This is an outlined alert"
+      }
+    }
+  ],
+  "colors": [
+    {
+      "name": "Primary",
+      "value": "primary"
+    },
+    {
+      "name": "Secondary",
+      "value": "secondary"
+    },
+    {
+      "name": "Error",
+      "value": "error"
+    },
+    {
+      "name": "Warning",
+      "value": "warning"
+    },
+    {
+      "name": "Info",
+      "value": "info"
+    },
+    {
+      "name": "Success",
+      "value": "success"
+    }
+  ],
+  "states": [
+    {
+      "name": "Error",
+      "description": "Alerta de erro",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "error",
+          "text": "Erro: Ocorreu um problema ao processar sua solicitação"
+        }
+      ]
+    },
+    {
+      "name": "Warning",
+      "description": "Alerta de aviso",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "warning",
+          "text": "Atenção: Alguns dados podem estar desatualizados"
+        }
+      ]
+    },
+    {
+      "name": "Info",
+      "description": "Alerta informativo",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "info",
+          "text": "Informação: Sua sessão expirará em 5 minutos"
+        }
+      ]
+    },
+    {
+      "name": "Success",
+      "description": "Alerta de sucesso",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "success",
+          "text": "Sucesso: Suas alterações foram salvas com sucesso"
+        }
+      ]
+    }
+  ],
+  "bestPractices": [
+    {
+      "title": "Hierarquia Visual",
+      "description": "Use diferentes variantes para estabelecer hierarquia",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "error",
+          "severity": "error",
+          "text": "Erro crítico"
+        },
+        {
+          "variant": "outlined",
+          "color": "warning",
+          "severity": "warning",
+          "text": "Aviso importante"
+        },
+        {
+          "variant": "standard",
+          "color": "info",
+          "severity": "info",
+          "text": "Informação geral"
+        }
+      ]
+    },
+    {
+      "title": "Cores Significativas",
+      "description": "Use cores apropriadas para cada tipo de mensagem",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "error",
+          "severity": "error",
+          "text": "Operação falhou"
+        },
+        {
+          "variant": "filled",
+          "color": "success",
+          "severity": "success",
+          "text": "Operação concluída"
+        },
+        {
+          "variant": "filled",
+          "color": "warning",
+          "severity": "warning",
+          "text": "Atenção necessária"
+        }
+      ]
+    }
+  ]
+} 

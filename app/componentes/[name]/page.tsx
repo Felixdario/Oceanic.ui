@@ -1,20 +1,33 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { DocPagination } from "@/app/components/ui/doc-pagination"
 import { findAdjacentPages } from "@/app/utils/navigation"
-import { ButtonPreview } from "./components/ButtonPreview"
-import { ButtonCode } from "./components/ButtonCode"
+import { TabPreview } from "./components/TabPreview"
+import { TabCode } from "./components/TabCode"
+import { useParams } from "next/navigation"
+import { ComponentData } from "./data"
 
-export default function ButtonPage() {
+export default function ComponentPage() {
   const [activeTab, setActiveTab] = useState("preview")
-  const { prevPage, nextPage } = findAdjacentPages("/componentes/button")
+  const [componentData, setComponentData] = useState<ComponentData | null>(null)
+  const params = useParams()
+  const componentName = params.name as string
+  const { prevPage, nextPage } = findAdjacentPages(`/componentes/${componentName}`)
+
+  useEffect(() => {
+    import(`@/app/mocks/${componentName}.json`).then((data) => {
+      setComponentData(data.default)
+    })
+  }, [componentName])
+
+  if (!componentData) return null
 
   return (
     <div className="container mx-auto space-y-8 pt-4 pb-16">
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight">Button</h1>
-        <p className="text-lg text-muted-foreground">Um componente de botão com diferentes variantes e tamanhos.</p>
+        <h1 className="text-3xl font-bold tracking-tight">{componentData.name}</h1>
+        <p className="text-lg text-muted-foreground">{componentData.description}</p>
       </div>
 
       <div>
@@ -42,11 +55,11 @@ export default function ButtonPage() {
 
       <div className="mt-6">
         <div className={activeTab === "preview" ? "" : "hidden"}>
-          <ButtonPreview />
+          <TabPreview data={componentData} />
         </div>
 
         <div className={activeTab === "code" ? "" : "hidden"}>
-          <ButtonCode />
+          <TabCode data={componentData} />
         </div>
       </div>
 
@@ -56,4 +69,4 @@ export default function ButtonPage() {
       />
     </div>
   )
-}
+} 

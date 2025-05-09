@@ -25,12 +25,12 @@
           "label": "Alert"
         },
         {
-          "href": "/componentes/alert-dialog",
-          "label": "Alert Dialog"
-        },
-        {
           "href": "/componentes/avatar",
           "label": "Avatar"
+        },
+        {
+          "href": "/componentes/badge",
+          "label": "Badge"
         },
         {
           "href": "/componentes/button",
@@ -39,6 +39,14 @@
         {
           "href": "/componentes/card",
           "label": "Card"
+        },
+        {
+          "href": "/componentes/checkbox",
+          "label": "Checkbox"
+        },
+        {
+          "href": "/componentes/chip",
+          "label": "Chip"
         }
       ]
     },

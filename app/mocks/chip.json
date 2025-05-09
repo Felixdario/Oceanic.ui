@@ -1,0 +1,177 @@
+{
+  "name": "Chip",
+  "description": "O componente Chip do Material UI é usado para representar entradas, atributos ou ações em uma interface compacta.",
+  "component": {
+    "type": "Chip",
+    "import": "import { Chip } from '@mui/material'",
+    "defaultProps": {
+      "variant": "filled",
+      "color": "info",
+      "label": "Chip"
+    }
+  },
+  "codeExample": {
+    "import": "import { Chip } from '@mui/material'",
+    "component": "Chip",
+    "props": ["variant", "color", "label", "onDelete"]
+  },
+  "labels": {
+    "code": "Código",
+    "properties": "Propriedades",
+    "propertiesDescription": "O Chip possui várias propriedades que podem ser personalizadas:",
+    "variants": "Variantes",
+    "variantsDescription": "O Chip pode ser exibido em diferentes estilos:",
+    "colors": "Cores",
+    "colorsDescription": "O Chip pode ser exibido em diferentes cores:",
+    "sizes": "Tamanhos",
+    "sizesDescription": "O Chip pode ser exibido em diferentes tamanhos:",
+    "states": "Estados",
+    "statesDescription": "O Chip pode estar em diferentes estados:",
+    "bestPractices": "Melhores Práticas",
+    "customization": "Customização",
+    "implementation": "Implementação",
+    "preview": "Preview",
+    "variant": "Variante",
+    "color": "Cor",
+    "text": "Texto",
+    "disabled": "Desabilitado",
+    "loading": "Carregando"
+  },
+  "properties": [
+    {
+      "name": "variant",
+      "type": "string",
+      "description": "Define o estilo visual do chip",
+      "options": ["filled", "outlined"]
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "description": "Define a cor do chip",
+      "options": ["default", "primary", "secondary", "error", "info", "success", "warning"]
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Texto exibido no chip"
+    },
+    {
+      "name": "onDelete",
+      "type": "function",
+      "description": "Função chamada quando o ícone de deletar é clicado"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Filled",
+      "description": "Chip com preenchimento sólido",
+      "example": {
+        "variant": "filled",
+        "label": "Filled"
+      }
+    },
+    {
+      "name": "Outlined",
+      "description": "Chip com borda e sem preenchimento",
+      "example": {
+        "variant": "outlined",
+        "label": "Outlined"
+      }
+    }
+  ],
+  "colors": [
+    {
+      "name": "Default",
+      "value": "default"
+    },
+    {
+      "name": "Primary",
+      "value": "primary"
+    },
+    {
+      "name": "Secondary",
+      "value": "secondary"
+    },
+    {
+      "name": "Error",
+      "value": "error"
+    },
+    {
+      "name": "Info",
+      "value": "info"
+    },
+    {
+      "name": "Success",
+      "value": "success"
+    },
+    {
+      "name": "Warning",
+      "value": "warning"
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "value": "small",
+      "example": {
+        "size": "small",
+        "label": "Small"
+      }
+    },
+    {
+      "name": "Medium",
+      "value": "medium",
+      "example": {
+        "size": "medium",
+        "label": "Medium"
+      }
+    }
+  ],
+  "states": {
+    "disabled": {
+      "description": "Chip desabilitado",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "primary",
+          "label": "Disabled",
+          "disabled": true
+        }
+      ]
+    },
+    "deletable": {
+      "description": "Chip com opção de deletar",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "primary",
+          "label": "Deletable",
+          "onDelete": "() => {}"
+        }
+      ]
+    }
+  },
+  "bestPractices": [
+    {
+      "title": "Uso de Cores",
+      "description": "Use cores que façam sentido no contexto da sua aplicação",
+      "examples": [
+        {
+          "variant": "filled",
+          "color": "primary",
+          "label": "Primary"
+        }
+      ]
+    },
+    {
+      "title": "Labels",
+      "description": "Mantenha os textos curtos e descritivos",
+      "examples": [
+        {
+          "variant": "filled",
+          "label": "Short Text"
+        }
+      ]
+    }
+  ]
+} 
