@@ -12,7 +12,7 @@ export default function ComponentesPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Componentes Populares</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Explore nossa biblioteca de componentes prontos para uso
+              Explore nossa biblioteca de componentes prontos para uso [Ainda em desenvolvimento]
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
