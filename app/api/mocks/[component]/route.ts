@@ -4,10 +4,11 @@ import path from 'path';
 
 export async function GET(
   request: Request,
-  { params }: { params: { component: string } }
+  { params }: { params: Promise<{ component: string }> }
 ) {
   try {
-    const component = params.component;
+    const resolvedParams = await params;
+    const component = resolvedParams.component;
     const filePath = path.join(process.cwd(), 'app', 'mocks', `${component}.json`);
     
     if (!fs.existsSync(filePath)) {
