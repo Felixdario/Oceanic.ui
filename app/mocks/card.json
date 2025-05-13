@@ -1,6 +1,6 @@
 {
   "name": "Card",
-  "description": "Um componente de cartão que exibe conteúdo e ações relacionadas a um único assunto.",
+  "description": "Os cards servem como um contêiner universal que contém conteúdo e ações relacionadas a um tópico ou assunto específico. O propósito de usar cards é agrupar informações, permitindo que os usuários naveguem por uma coleção de itens ou ações relacionadas.",
   "component": {
     "type": "Card",
     "import": "import { Card, CardContent, CardActions, CardMedia } from '@mui/material'",

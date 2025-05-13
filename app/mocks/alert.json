@@ -1,6 +1,6 @@
 {
   "name": "Alert",
-  "description": "Um componente de alerta para exibir mensagens importantes ao usuário.",
+  "description": "Os “Alerts” são utilizados para feedback do sistema e áreas de destaque. Estão disponíveis nos estados Base, Primário, Secundário, Terciário, Quaternário, Sucesso, Atenção e Erro. Essa diversidade de estados assegura que os alertas possam comunicar diferentes tipos de mensagens e níveis de importância de maneira clara e eficaz, melhorando a experiência do usuário e a usabilidade da interface.",
   "component": {
     "type": "Alert",
     "import": "import { Alert } from '@mui/material'",

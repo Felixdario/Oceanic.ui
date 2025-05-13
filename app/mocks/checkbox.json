@@ -1,6 +1,6 @@
 {
   "name": "Checkbox",
-  "description": "O componente Checkbox do Material UI é usado para permitir que os usuários selecionem uma ou mais opções de um conjunto de opções.",
+  "description": "O componente Checkbox permite que os usuários selecionem uma ou mais opções de um conjunto. Ele pode ser configurado em diferentes estados, como selecionado, não selecionado e indeterminado. O Checkbox oferece opções visuais para feedback claro e imediato, garantindo acessibilidade e usabilidade. Ideal para formulários e configurações, ele pode ser combinado com etiquetas de texto para fornecer contexto adicional.",
   "component": {
     "type": "Checkbox",
     "import": "import { Checkbox } from '@mui/material'\nimport FavoriteBorder from '@mui/icons-material/FavoriteBorder'\nimport Favorite from '@mui/icons-material/Favorite'",

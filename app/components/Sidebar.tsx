@@ -72,7 +72,6 @@ const Sidebar = () => {
     }
   }, [pathname, isMobile]);
 
-  // Efeito para abrir automaticamente a seção ativa
   useEffect(() => {
     const activeSection = sections.find(section => 
       section.items.some(item => isActive(item.href))

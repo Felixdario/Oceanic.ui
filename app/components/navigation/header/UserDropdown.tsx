@@ -1,43 +1,61 @@
-import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface UserDropdownProps {
   user: {
     name: string;
     email: string;
-    avatarUrl: string;
   };
   onLogout?: () => void;
 }
 
 export function UserDropdown({ user, onLogout }: UserDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  function getInitials(name: string) {
+    return name
+      .split(' ')
+      .map((word: string) => word.charAt(0).toUpperCase())
+      .join('');
+  }
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    }
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
-    <div className="relative">
-      <button
-        className="flex items-center gap-2 rounded-full hover:opacity-80"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <Image
-          src={user.avatarUrl}
-          alt={user.name}
-          width={48}
-          height={48}
-          className="rounded-full"
-        />
-      </button>
+    <div className="relative" ref={dropdownRef}>
+       <div onClick={() => setIsOpen(!isOpen)} className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 overflow-hidden cursor-pointer">
+          <div className="absolute inset-0 flex items-center justify-center text-white font-bold">
+            {getInitials(user.name)}
+          </div>
+        </div>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 rounded-md border bg-background shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="absolute right-0 mt-2 w-56 rounded-md border bg-background shadow-lg ring-1 ring-black ring-opacity-5 z-50">
           <div className="px-4 py-3 border-b">
             <p className="text-sm font-medium">{user.name}</p>
             <p className="text-xs text-muted-foreground truncate">{user.email}</p>
           </div>
           <div className="py-1">
             <Link
-              href="/perfil"
+              href="/home/perfil"
               className="flex items-center px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="mr-3 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -47,7 +65,7 @@ export function UserDropdown({ user, onLogout }: UserDropdownProps) {
               Perfil
             </Link>
             <Link
-              href="/settings"
+              href="/home/settings"
               className="flex items-center px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="mr-3 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

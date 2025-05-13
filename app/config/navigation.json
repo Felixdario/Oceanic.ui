@@ -4,11 +4,11 @@
       "title": "Primeiros Passos",
       "items": [
         {
-          "href": "/dashboard/instalacao",
+          "href": "/home/dashboard/instalacao",
           "label": "Instalação"
         },
         {
-          "href": "/dashboard/estrutura",
+          "href": "/home/dashboard/estrutura",
           "label": "Estrutura do Projeto"
         }
       ]
@@ -17,35 +17,35 @@
       "title": "Componentes",
       "items": [
         {
-          "href": "/componentes/accordion",
+          "href": "/home/componentes/accordion",
           "label": "Accordion"
         },
         {
-          "href": "/componentes/alert",
+          "href": "/home/componentes/alert",
           "label": "Alert"
         },
         {
-          "href": "/componentes/avatar",
+          "href": "/home/componentes/avatar",
           "label": "Avatar"
         },
         {
-          "href": "/componentes/badge",
+          "href": "/home/componentes/badge",
           "label": "Badge"
         },
         {
-          "href": "/componentes/button",
+          "href": "/home/componentes/button",
           "label": "Button"
         },
         {
-          "href": "/componentes/card",
+          "href": "/home/componentes/card",
           "label": "Card"
         },
         {
-          "href": "/componentes/checkbox",
+          "href": "/home/componentes/checkbox",
           "label": "Checkbox"
         },
         {
-          "href": "/componentes/chip",
+          "href": "/home/componentes/chip",
           "label": "Chip"
         }
       ]
@@ -54,15 +54,15 @@
       "title": "API",
       "items": [
         {
-          "href": "/api/componentes",
+          "href": "/home/api/componentes",
           "label": "Componentes"
         },
         {
-          "href": "/api/convencoes",
+          "href": "/home/api/convencoes",
           "label": "Convenções de Arquivos"
         },
         {
-          "href": "/api/funcoes",
+          "href": "/home/api/funcoes",
           "label": "Funções"
         }
       ]
@@ -71,15 +71,15 @@
       "title": "Arquitetura",
       "items": [
         {
-          "href": "/architecture/acessibilidade",
+          "href": "/home/architecture/acessibilidade",
           "label": "Acessibilidade"
         },
         {
-          "href": "/architecture/atualizacao",
+          "href": "/home/architecture/atualizacao",
           "label": "Atualização Rápida"
         },
         {
-          "href": "/architecture/compilador",
+          "href": "/home/architecture/compilador",
           "label": "Compilador Next.js"
         }
       ]
@@ -88,7 +88,7 @@
       "title": "Comunidade",
       "items": [
         {
-          "href": "/community/contribuicao",
+          "href": "/home/community/contribuicao",
           "label": "Guia de Contribuição"
         }
       ]

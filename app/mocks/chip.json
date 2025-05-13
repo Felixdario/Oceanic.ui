@@ -1,6 +1,6 @@
 {
   "name": "Chip",
-  "description": "O componente Chip do Material UI é usado para representar entradas, atributos ou ações em uma interface compacta.",
+  "description": "O componente Chip está disponível nas opções Fill, Outlined e Accent. Essas variações permitem destacar informações ou indicar status de maneira visualmente distinta, adaptando-se a diferentes contextos e necessidades dentro da interface.",
   "component": {
     "type": "Chip",
     "import": "import { Chip } from '@mui/material'",

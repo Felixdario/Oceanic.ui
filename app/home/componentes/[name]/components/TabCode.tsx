@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Checkbox, FormControlLabel, Box, Button, Avatar, Alert, Accordion, AccordionSummary, AccordionDetails, Badge, Card, CardContent, Chip, CheckboxProps } from "@mui/material"
-import { CodeBlock } from "@/components/code-block"
+import { CodeBlock } from "@/app/components/ui/code-block"
 import { Dropdown } from "@/app/components/ui/dropdown"
 import NotificationsIcon from '@mui/icons-material/Notifications'
 import MailIcon from '@mui/icons-material/Mail'

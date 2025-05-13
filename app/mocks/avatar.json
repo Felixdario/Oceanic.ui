@@ -1,6 +1,6 @@
 {
   "name": "Avatar",
-  "description": "O componente Avatar do Material UI é usado para representar usuários ou entidades em uma interface.",
+  "description": "O componente Avatar oferece diversas opções de personalização, incluindo a exibição de imagem, iniciais ou sem conteúdo. Além disso, pode ser combinado com as opções de status do componente DOT, permitindo a sinalização de estados como base, sucesso, atenção e erro diretamente no Avatar. Essa flexibilidade garante que o Avatar possa ser utilizado de forma eficaz em diferentes contextos da interface, atendendo a uma variedade de necessidades de representação visual e comunicação de status.",
   "component": {
     "type": "Avatar",
     "import": "import { Avatar } from '@mui/material'",

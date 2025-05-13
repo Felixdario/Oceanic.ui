@@ -1,6 +1,6 @@
 {
   "name": "Button",
-  "description": "Um componente de botão com diferentes variantes e tamanhos.",
+  "description": "Os Buttons estão disponíveis nos tamanhos Small, Medium, Large e XLarge, com variações que incluem apenas ícone, texto e ícone, ou apenas texto. Eles abrangem diferentes estados, como Base, Primário, Secundário, Terciário, Quaternário, Sucesso, Atenção e Erro. Essa versatilidade garante que os botões atendam a diversas necessidades e contextos dentro da interface, proporcionando uma experiência de usuário intuitiva e consistente.Os “Buttons” estão disponíveis nos tamanhos Small, Medium, Large e XLarge, com variações que incluem apenas ícone, texto e ícone, ou apenas texto. Eles abrangem diferentes estados, como Base, Primário, Secundário, Terciário, Quaternário, Sucesso, Atenção e Erro. Essa versatilidade garante que os botões atendam a diversas necessidades e contextos dentro da interface, proporcionando uma experiência de usuário intuitiva e consistente.",
   "component": {
     "type": "Button",
     "import": "import { Button } from '@mui/material'",

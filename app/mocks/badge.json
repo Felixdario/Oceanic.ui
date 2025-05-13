@@ -1,6 +1,6 @@
 {
   "name": "Badge",
-  "description": "Um componente de badge para exibir notificações, contadores ou status.",
+  "description": "O componente Badge está disponível nas opções Fill, Outlined e Accent. Essas variações permitem destacar informações ou indicar status de maneira visualmente distinta, adaptando-se a diferentes contextos e necessidades dentro da interface.",
   "component": {
     "type": "Badge",
     "import": "import { Badge } from '@mui/material'\nimport NotificationsIcon from '@mui/icons-material/Notifications'\nimport MailIcon from '@mui/icons-material/Mail'\nimport ShoppingCartIcon from '@mui/icons-material/ShoppingCart'\nimport AccountCircleIcon from '@mui/icons-material/AccountCircle'",

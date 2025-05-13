@@ -1,6 +1,6 @@
 {
   "name": "Accordion",
-  "description": "Um componente expansível que permite organizar conteúdo em seções recolhíveis.",
+  "description": "O acordeão é um elemento de controle gráfico que compreende uma lista de itens empilhados verticalmente, como rótulos ou miniaturas. Cada item pode ser “expandido” ou “recolhido” para revelar o conteúdo associado a esse item. Pode haver zero itens expandidos, exatamente um ou mais de um item expandido por vez, dependendo da configuração.",
   "component": {
     "type": "Accordion",
     "import": "import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material'",
