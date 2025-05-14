@@ -16,7 +16,7 @@ export default function ComponentPage() {
   const [error, setError] = useState<string | null>(null)
   const params = useParams()
   const componentName = params.name as string
-  const { prevPage, nextPage } = findAdjacentPages(`/componentes/${componentName}`)
+  const { prevPage, nextPage } = findAdjacentPages(`/home/componentes/${componentName}`)
 
   useEffect(() => {
     if (componentName) {

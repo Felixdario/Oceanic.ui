@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { MenuButton } from "./navigation/header/MenuButton";
 import { Breadcrumbs } from "./navigation/header/Breadcrumbs";
 import { SearchBar } from "./navigation/header/SearchBar";
-import { UserDropdown } from "./navigation/header/UserDropdown";
 import { Divider } from "./navigation/header/Divider";
 import { ThemeToggle } from "./navigation/header/theme-toggle";
 
@@ -37,15 +36,6 @@ const Header = () => {
 
   const breadcrumbs = getBreadcrumbs(pathname);
 
-  const handleLogout = () => {
-    console.log('Logout clicked');
-  };
-
-  const mockUser = {
-    name: "Felix Dario",
-    email: "felixdario@gmail.com"
-  };
-
   return (
     <header className={`sticky top-0 z-10 flex h-16 shrink-0 items-center gap-2 border-b px-3 transition-colors duration-200 ${hasScrolled ? 'bg-background' : ''}`}>
       <div className="flex flex-1 items-center gap-2">
@@ -59,7 +49,6 @@ const Header = () => {
         <Divider />
         <ThemeToggle />
         <Divider />
-        <UserDropdown user={mockUser} onLogout={handleLogout} />
       </div>
     </header>
   );
